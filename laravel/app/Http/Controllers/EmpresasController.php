@@ -53,7 +53,6 @@ class EmpresasController extends Controller
 
         //guarda el logo
         if ($request->file('logo')) {
-            $success = Storage::cleanDirectory($directory);
 
             $nArchivo = $request->file('logo')->getClientOriginalName();
             $filename = md5($nArchivo).'.'.$request->file('logo')->getClientOriginalExtension();
