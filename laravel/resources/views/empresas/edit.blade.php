@@ -9,7 +9,7 @@
         </section>
         <div class="card-body">
             
-            {!! Form::model($empresas, ['route' => ['empresas.update', $empresas->id], 'method' => 'patch', 'enctype'=>'multipart/form-data']) !!}
+            {!! Form::model($empresas, ['id' => 'myform', 'route' => ['empresas.update', $empresas->id], 'method' => 'patch', 'enctype'=>'multipart/form-data']) !!}
                 <div class="container">
                     <div class="row">
 

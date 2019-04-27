@@ -9,7 +9,7 @@
         </section>
         <div class="card-body">
             
-            {!! Form::open(['route' => 'empresas.store', 'enctype'=>'multipart/form-data']) !!}
+            {!! Form::open(['id' => 'myform','route' => 'empresas.store', 'enctype'=>'multipart/form-data']) !!}
                 <div class="container">
                     <div class="row">
 
